@@ -1,10 +1,9 @@
-
 *{
     margin: 0;
     padding: 0;
     }
     body{
-    background-image: url('/img/frutas.jpg');
+    background-image: url('/img/tuturvo.jpg');
     background-size: cover; /* ajusta o tamanho da imagem */
     background-repeat: no-repeat; /* Para evitar a repetição da imagem */
     background-color: #131313;
@@ -44,24 +43,7 @@
         .botao-personalizado:hover {
             background-color: #1a1616ab;
         }
-
-        .moveable-image {
-            position: relative; /* or absolute */
-            left: 820px;  /* move 50px to the right */
-            top: -10px;   /* move 20px down */
-        }
-
-        .moveable-gif {
-            position: relative; /* or absolute */
-            left: 820px;  /* move 50px to the right */
-            top: -70px;   /* move 20px down */
-        }
-
-        .kktua-gif {
-            position: relative;
-            left: -190px;
-            top: -100px;
-        }
+    
         .text-color{
             color: #fcf7f7;
         }
