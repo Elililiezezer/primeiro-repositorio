@@ -1,97 +1,67 @@
-:root{
-    --cor-de-fundo: #1E1E1E;
-    --verde: #6FFF57;
-    --branco: #FFFFFF;
-    --botao-ativo: #3A375E;
-    --botao-inativo: rgba(58, 55, 94, 0.5);
-    --texto-fundo: rgba(58, 55, 94, 0.3);
-}
 
-body {
-    background-color: var(--cor-de-fundo);
-    color: var(--branco);
-    font-family: 'Chakra Petch', sans-serif;
-  }
-  */seletor
- 
-  .conteudo-principal {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.titulo-principal {
-    text-align: left;
-    width: 100%;
-    font-size: 32px;
-}
-.titulo-principal span {
-    color: var(--verde);
-}
-.botao {
-    font-family: "Crakra Petch", sans-serif;
-    background-color: var(--botao-inativo);
-    color: var(--branco);
-    display: flex;
-    justify-content: center;
-    padding: 1em;
-    font-size: 18px;
-    align-items: center;
-    width: 100%;
-    border-bottom: 4px solid var(--botao-ativo);
-    border-left: 2px solid var(--botao-ativo);
-    border-right: 2px solid var(--botao-ativo);
-    border-top: none;
-}
-.botoes {
-    display: block;
-}
-.botao:first-child {
-    border-radius: 40px 40px 0 0;
-}
-
-.botao.ativo{
-    background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--verde);
-}
-
-.abas-textos{
-    background-color: var(--texto-fundo);
-    padding: 40px;
-    border-radius: 0 0 40px 40px;
-}
-.aba-conteudo.ativo{
-    display:block;
-}
-
-.aba-conteudo{
-    display: none;
-}
-
-.aba-conteudo-titulo-principal{
-    font-size: 28px;
-    text-align: center;
-}
-.aba-conteudo-titulo-secundario{
-    text-align: center;
-    color: var(--verde);
-    text-transform: uppercase;
-}
-
-@media screen and (min-width: 768px) {
-    .botoes {
-        display: flex;
+*{
+    margin: 0;
+    padding: 0;
     }
-}
-
-    .botao:first-child {
-        border-radius: 40px 0 0 0;
+    body{
+    background-image: url('/img/frutas.jpg');
+    background-size: cover; /* ajusta o tamanho da imagem */
+    background-repeat: no-repeat; /* Para evitar a repetição da imagem */
+    background-color: #131313;
+    overflow: hidden;
     }
 
-    .botao:last-child {
-        border-radius: 0 40px 0 0;
+    .texto-container {
+        width: 80%; /* Largura do container */
+        margin: 50px auto; /* muda a altura do container na página */
+        padding: 20px; /* Espaçamento interno do container */
+        background-color: #1a1616ab; /* Cor de fundo do container */
+        border: 1px solid #ccc; /* Borda do container */
+        border-radius: 8px; /* Borda arredondada */
+        overflow: hidden; /* Limpa o float */
     }
+
+    .texto-container img {
+            float: left; /* Flutua a imagem para a esquerda */
+            margin-right: 20px; /* Espaço entre a imagem e o texto */
+            border-radius: 8px;
+        }
+
+        .botao-personalizado {
+            background-color: #1a1616ab; /* Verde */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 30px 250px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        .botao-personalizado:hover {
+            background-color: #1a1616ab;
+        }
+
+        .moveable-image {
+            position: relative; /* or absolute */
+            left: 820px;  /* move 50px to the right */
+            top: -10px;   /* move 20px down */
+        }
+
+        .moveable-gif {
+            position: relative; /* or absolute */
+            left: 820px;  /* move 50px to the right */
+            top: -70px;   /* move 20px down */
+        }
+
+        .kktua-gif {
+            position: relative;
+            left: -190px;
+            top: -100px;
+        }
+        .text-color{
+            color: #fcf7f7;
+        }
